@@ -1,0 +1,425 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15325 ]
+[d frameptr 6 ]
+"492 /Applications/microchip/xc8/v1.42/sources/common/doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 /Applications/microchip/xc8/v1.42/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /Applications/microchip/xc8/v1.42/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 /Applications/microchip/xc8/v1.42/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 /Applications/microchip/xc8/v1.42/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"8 /Applications/microchip/xc8/v1.42/sources/common/isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"6 /Applications/microchip/xc8/v1.42/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"28 /Applications/microchip/xc8/v1.42/sources/common/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 /Applications/microchip/xc8/v1.42/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"24 /DataPersonal/CodeExamples/PIC16-LCD-v2/1-wire.h
+[v _drive_OW_low drive_OW_low `(v  1 e 1 0 ]
+"37
+[v _drive_OW_high drive_OW_high `(v  1 e 1 0 ]
+"50
+[v _read_OW read_OW `(uc  1 e 1 0 ]
+"69
+[v _OW_reset_pulse OW_reset_pulse `(uc  1 e 1 0 ]
+"93
+[v _OW_write_bit OW_write_bit `(v  1 e 1 0 ]
+"134
+[v _OW_read_bit OW_read_bit `(uc  1 e 1 0 ]
+"155
+[v _OW_write_byte OW_write_byte `(v  1 e 1 0 ]
+"173
+[v _OW_read_byte OW_read_byte `(uc  1 e 1 0 ]
+"4 /DataPersonal/CodeExamples/PIC16-LCD-v2/lcd.h
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+"26
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"35
+[v _Lcd_Clear Lcd_Clear `(i  1 e 2 0 ]
+"41
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"62
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"81
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"97
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+"110
+[v _Lcd_Shift_Left Lcd_Shift_Left `(v  1 e 1 0 ]
+"61 /DataPersonal/CodeExamples/PIC16-LCD-v2/main.c
+[v _main main `(v  1 e 1 0 ]
+"86 /DataPersonal/CodeExamples/PIC16-LCD-v2/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"93
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"52 /DataPersonal/CodeExamples/PIC16-LCD-v2/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+[s S81 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"459 /Applications/microchip/xc8/v1.42/include/pic16f15325.h
+[u S88 . 1 `S81 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES88  1 e 1 @12 ]
+"544
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+[s S47 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"559
+[u S54 . 1 `S47 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES54  1 e 1 @18 ]
+"589
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"639
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+[s S64 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"654
+[u S71 . 1 `S64 1 . 1 0 ]
+[v _LATAbits LATAbits `VES71  1 e 1 @24 ]
+"684
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+"9622
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"9762
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"9802
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @2192 ]
+"9859
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"9910
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"9968
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"17491
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"17536
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"17586
+[v _ODCONA ODCONA `VEuc  1 e 1 @7994 ]
+"17876
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"17926
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"17976
+[v _ODCONC ODCONC `VEuc  1 e 1 @8016 ]
+"20633
+[v _RC0 RC0 `VEb  1 e 0 @112 ]
+"20645
+[v _RC1 RC1 `VEb  1 e 0 @113 ]
+"20661
+[v _RC2 RC2 `VEb  1 e 0 @114 ]
+"20677
+[v _RC3 RC3 `VEb  1 e 0 @115 ]
+"20689
+[v _RC4 RC4 `VEb  1 e 0 @116 ]
+"20701
+[v _RC5 RC5 `VEb  1 e 0 @117 ]
+"362 /Applications/microchip/xc8/v1.42/sources/common/doprnt.c
+[v _hexpowers hexpowers `DCC[4]ui  1 s 8 hexpowers ]
+"61 /DataPersonal/CodeExamples/PIC16-LCD-v2/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"86
+[v main@deviceSerialNum deviceSerialNum `[64]uc  1 a 64 0 ]
+"87
+[v main@buffer buffer `[20]uc  1 a 20 55 ]
+"89
+[v main@serial_number_reversed serial_number_reversed `[8]uc  1 a 8 72 ]
+[v main@serial_number serial_number `[8]uc  1 a 8 64 ]
+"92
+[v main@tCprecise tCprecise `f  1 a 3 12 ]
+[v main@temperatureCprecise temperatureCprecise `f  1 a 3 2 ]
+[v main@temperatureFprecise temperatureFprecise `f  1 a 3 75 ]
+"85
+[v main@binaryTemperatureC binaryTemperatureC `ui  1 a 2 15 ]
+"84
+[v main@i i `i  1 a 2 10 ]
+[v main@a a `i  1 a 2 7 ]
+[v main@flag flag `i  1 a 2 5 ]
+"90
+[v main@tempH tempH `us  1 a 2 0 ]
+[v main@tempL tempL `us  1 a 2 78 ]
+"88
+[v main@temp temp `uc  1 a 1 9 ]
+"160
+} 0
+"492 /Applications/microchip/xc8/v1.42/sources/common/doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"1500
+[v sprintf@idx idx `uc  1 a 1 18 ]
+"501
+[v sprintf@width width `i  1 a 2 29 ]
+"529
+[v sprintf@len len `ui  1 a 2 26 ]
+"530
+[v sprintf@cp cp `*.26DCCuc  1 a 2 24 ]
+"528
+[v sprintf@val val `ui  1 a 2 20 ]
+"499
+[v sprintf@c c `c  1 a 1 31 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 23 ]
+"506
+[v sprintf@prec prec `c  1 a 1 22 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 19 ]
+"492
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.25DCCuc  1 p 2 0 ]
+"533
+[v sprintf@sp sp `*.4uc  1 a 1 28 ]
+"1541
+} 0
+"8 /Applications/microchip/xc8/v1.42/sources/common/isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"15 /Applications/microchip/xc8/v1.42/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"6 /Applications/microchip/xc8/v1.42/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"28 /Applications/microchip/xc8/v1.42/sources/common/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"62 /Applications/microchip/xc8/v1.42/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 5 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 9 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 8 ]
+[v ___ftmul@exp exp `uc  1 a 1 4 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 8 ]
+[v ___ftmul@f2 f2 `f  1 p 3 11 ]
+"157
+} 0
+"56 /Applications/microchip/xc8/v1.42/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 21 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 25 ]
+[v ___ftdiv@exp exp `uc  1 a 1 24 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 20 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 10 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 13 ]
+"86
+} 0
+"86 /Applications/microchip/xc8/v1.42/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 38 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 37 ]
+[v ___ftadd@sign sign `uc  1 a 1 36 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 26 ]
+[v ___ftadd@f2 f2 `f  1 p 3 29 ]
+"148
+} 0
+"62 /Applications/microchip/xc8/v1.42/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"86 /DataPersonal/CodeExamples/PIC16-LCD-v2/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"52 /DataPersonal/CodeExamples/PIC16-LCD-v2/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"93 /DataPersonal/CodeExamples/PIC16-LCD-v2/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"107
+} 0
+"155 /DataPersonal/CodeExamples/PIC16-LCD-v2/1-wire.h
+[v _OW_write_byte OW_write_byte `(v  1 e 1 0 ]
+{
+[v OW_write_byte@write_data write_data `uc  1 a 1 wreg ]
+"157
+[v OW_write_byte@loop loop `uc  1 a 1 3 ]
+"155
+[v OW_write_byte@write_data write_data `uc  1 a 1 wreg ]
+"158
+[v OW_write_byte@write_data write_data `uc  1 a 1 2 ]
+"163
+} 0
+"93
+[v _OW_write_bit OW_write_bit `(v  1 e 1 0 ]
+{
+[v OW_write_bit@write_bit write_bit `uc  1 a 1 wreg ]
+[v OW_write_bit@write_bit write_bit `uc  1 a 1 wreg ]
+"95
+[v OW_write_bit@write_bit write_bit `uc  1 a 1 0 ]
+"124
+} 0
+"69
+[v _OW_reset_pulse OW_reset_pulse `(uc  1 e 1 0 ]
+{
+"71
+[v OW_reset_pulse@presence_detect presence_detect `uc  1 a 1 2 ]
+"82
+} 0
+"173
+[v _OW_read_byte OW_read_byte `(uc  1 e 1 0 ]
+{
+"175
+[v OW_read_byte@loop loop `uc  1 a 1 5 ]
+[v OW_read_byte@result result `uc  1 a 1 4 ]
+"183
+} 0
+"134
+[v _OW_read_bit OW_read_bit `(uc  1 e 1 0 ]
+{
+"136
+[v OW_read_bit@read_data read_data `uc  1 a 1 2 ]
+"145
+} 0
+"50
+[v _read_OW read_OW `(uc  1 e 1 0 ]
+{
+"52
+[v read_OW@read_data read_data `uc  1 a 1 0 ]
+"59
+} 0
+"24
+[v _drive_OW_low drive_OW_low `(v  1 e 1 0 ]
+{
+"28
+} 0
+"37
+[v _drive_OW_high drive_OW_high `(v  1 e 1 0 ]
+{
+"41
+} 0
+"97 /DataPersonal/CodeExamples/PIC16-LCD-v2/lcd.h
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+"99
+[v Lcd_Write_String@i i `i  1 a 2 8 ]
+"97
+[v Lcd_Write_String@a a `*.26uc  1 p 2 5 ]
+"102
+} 0
+"81
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"83
+[v Lcd_Write_Char@y y `uc  1 a 1 3 ]
+[v Lcd_Write_Char@temp temp `uc  1 a 1 2 ]
+"81
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"84
+[v Lcd_Write_Char@a a `uc  1 a 1 4 ]
+"95
+} 0
+"110
+[v _Lcd_Shift_Left Lcd_Shift_Left `(v  1 e 1 0 ]
+{
+"114
+} 0
+"41
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+"43
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 9 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 8 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 7 ]
+"41
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@b b `uc  1 p 1 3 ]
+"44
+[v Lcd_Set_Cursor@a a `uc  1 a 1 6 ]
+"60
+} 0
+"62
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"79
+} 0
+"35
+[v _Lcd_Clear Lcd_Clear `(i  1 e 2 0 ]
+{
+"39
+} 0
+"26
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+"28
+[v Lcd_Cmd@a a `uc  1 a 1 2 ]
+"33
+} 0
+"4
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+{
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+"6
+[v Lcd_Port@a a `uc  1 a 1 0 ]
+"25
+} 0
